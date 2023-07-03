@@ -1,0 +1,42 @@
+nav {
+  font-family: "Bebas Neue";
+  width: 100vw;
+  height: 5rem;
+  display: grid;
+  place-items: center;
+  background: #2a9d8f;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  transition: var(--transition);
+  font-size: 1.5rem;
+}
+
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo {
+  width: 5rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.nav__menu {
+  display: flex;
+  gap: 3.5rem;
+}
+
+.nav__menu a {
+  color: white;
+}
+
+/* HIDE NAV MENU ON TABLETS AND PHONES */
+@media screen and (max-width: 1024px) {
+  .nav__menu {
+    display: none;
+  }
+}
